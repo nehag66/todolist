@@ -1,0 +1,81 @@
+.Button {
+    border: none;
+    display: inline-block;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    align-self: center;
+    border-radius: 4px;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    background-color: rgb(156, 46, 64);
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.Button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .Button:hover span {
+    padding-right: 25px;
+  }
+
+  .Button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.Button:disabled {
+    color: #ccc;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.Button:hover {
+    background-color: red; 
+    color: white;
+  }
+
+.Input {
+    padding: 10px;
+    width: 200px;
+}
+
+.Main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15%;
+  text-align: left;
+}
+
+.PrintArea {
+  width: 100%;
+  padding: 25px 15px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  border: black;
+}
