@@ -8,14 +8,6 @@ class Todolist extends Component {
         value: '',
         items: []
     }
-
-    // onClickHandler = (event) => {
-    //     //console.log('clicked');
-    //     //console.log(this.state.value);
-        
-    //     const item = document.getElementById("input").value;
-    //     console.log(item);   
-    // }
     
     itemHandler = (event) => {
         event.preventDefault();
